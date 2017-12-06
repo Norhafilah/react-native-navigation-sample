@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#F5FCFF"
   },
-  welcome: {
+  coursetitle: {
     fontSize: 20,
     textAlign: "center",
     margin: 10
@@ -21,20 +21,20 @@ const styles = StyleSheet.create({
   }
 });
 
-const App = props => {
+const Home = props => {
   const { navigate } = props.navigation;
 
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>
-        Welcome to React Native Navigation Sample!
+      <Text style={styles.coursetitle}>
+       Tekonlogi Maklumat
       </Text>
       <Button
-        onPress={() => navigate("SecondScreen")}
-        title="Go to Second Screen"
+        onPress={() => navigate("CourseDetails")}
+        title="Course Details"
       />
     </View>
   );
 };
 
-export default App;
+export default Home;

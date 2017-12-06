@@ -15,18 +15,18 @@ const styles = StyleSheet.create({
   }
 });
 
-const SecondScreen = () => {
+const Notification = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>
-        THIS IS THE SECOND SCREEN!
+       List of notification
       </Text>
     </View>
   );
 };
 
-SecondScreen.navigationOptions = {
-  title: "Second Screen Title"
+Notification.navigationOptions = {
+  title: "Notification"
 };
 
-export default SecondScreen;
+export default Notification;
